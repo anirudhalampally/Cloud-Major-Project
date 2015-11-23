@@ -1,6 +1,13 @@
+#Team 6: Real Time Event Monitoring using spark
+
 from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 import sys
+import sys,os
+from nltk.corpus import wordnet
+import operator
+
+
 
 # Create a local StreamingContext with two working thread and batch interval of 1 second
 sc = SparkContext("", "tweet")
