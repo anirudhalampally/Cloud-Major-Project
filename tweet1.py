@@ -19,10 +19,9 @@ tweets=[]
 val=""
 for i in range(4):
 	val=sorted_x[i][0][2:-1]
-#	print val
+	print val
 	tweets.append(val)
-
-ft=open("tweets.txt","r")
+ft=open("tweets1.txt","r")
 tweets_tag={}
 for i in range(len(tweets)):
 	tweets_tag[str(int(i+1))]=[]
@@ -36,3 +35,4 @@ for tweet in ft.readlines():
 for i in range(len(tweets)):
 	for x in tweets_tag[str(int(i+1))]:
 		print x,
+
